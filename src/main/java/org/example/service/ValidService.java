@@ -14,8 +14,8 @@ public class ValidService {
     private static final Logger LOG = LoggerFactory.getLogger(ValidService.class.getName());
 
     protected void isValidCodes(String patchInfo) {
-        if (Objects.isNull(patchInfo) ||
-                !patchInfo.startsWith("/")) {
+        if (Objects.isNull(patchInfo)
+                || !patchInfo.startsWith("/")) {
             throw new CodeCurrencyAbsentException(CODE_CURRENCY_ABSENT.getMessage());
         }
         String codeRegex = "^/[A-Z]{6}$";

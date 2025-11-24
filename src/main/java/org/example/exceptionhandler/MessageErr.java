@@ -15,11 +15,11 @@ public enum MessageErr {
     FIELD_FORM_ABSENT("Отсутствует нужное поле формы");
     private final String message;
 
-    public String getMessage() {
-        return message;
-    }
-
     MessageErr(String message) {
         this.message = message;
+    }
+
+    public String getMessage() {
+        return message;
     }
 }

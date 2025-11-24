@@ -64,13 +64,12 @@ public enum AllCurrency {
     ETB("ETB", "Эфиопский быр", "Br"),
     CNY("CNY", "Юань", "¥");
 
-    private final String code;
-    private final String name;
-    private final String symbol;
-
     private static final List<AllCurrencyDto> CURRENCY_DTOS = Arrays.stream(values())
             .map(el -> new AllCurrencyDto(el.code, el.name, el.symbol))
             .toList();
+    private final String code;
+    private final String name;
+    private final String symbol;
 
     AllCurrency(String code, String name, String symbol) {
         this.code = code;
@@ -89,6 +88,7 @@ public enum AllCurrency {
     public String getSymbol() {
         return symbol;
     }
+
     public static List<AllCurrencyDto> dtos() {
         return CURRENCY_DTOS;
     }

@@ -20,7 +20,6 @@ public class CurrenciesServlet extends HttpServlet {
         service = new DbService();
     }
 
-
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         String pathInfo = req.getPathInfo();

@@ -87,7 +87,6 @@ public class DbService {
         )));
     }
 
-
     public String update(String pathInfo, String rawForm) {
         validService.isValidCodes(pathInfo);
         validService.isValidForm(rawForm);
@@ -130,8 +129,8 @@ public class DbService {
                         BigDecimal.ONE.divide(tarBas.rate(), 2, RoundingMode.HALF_EVEN),
                         amount));
         }
-        ExRateRespDto usdTar = store.findByCodes(new ExcRateCode( "USD", target));
-        ExRateRespDto usdBas = store.findByCodes(new ExcRateCode( "USD", base));
+        ExRateRespDto usdTar = store.findByCodes(new ExcRateCode("USD", target));
+        ExRateRespDto usdBas = store.findByCodes(new ExcRateCode("USD", base));
         if (Objects.isNull(usdTar) || Objects.isNull(usdBas)) {
             throw new CurrencyNotFoundException(CURRENCY_NOT_FOUND.getMessage());
         }
