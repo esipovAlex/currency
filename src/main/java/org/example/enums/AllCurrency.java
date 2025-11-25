@@ -1,4 +1,4 @@
-package org.example.enums;
+package org.example.constants;
 
 
 import org.example.model.response.AllCurrencyDto;
