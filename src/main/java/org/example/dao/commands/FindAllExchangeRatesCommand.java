@@ -1,8 +1,8 @@
 package org.example.dao.commands;
 
+import org.example.enums.Queries;
 import org.example.mapper.CreateMapper;
 import org.example.model.response.ExRateRespDto;
-import org.example.constants.Queries;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
