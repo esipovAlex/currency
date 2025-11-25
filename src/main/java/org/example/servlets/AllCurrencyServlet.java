@@ -2,7 +2,7 @@ package org.example.servlets;
 
 import com.google.gson.Gson;
 import org.example.model.response.AllCurrencyDto;
-import org.example.store.AllCurrency;
+import org.example.enums.AllCurrency;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;

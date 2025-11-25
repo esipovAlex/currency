@@ -1,4 +1,4 @@
-package org.example.store;
+package org.example.dao;
 
 import org.example.model.entity.Currency;
 import org.example.model.request.ExchCreateRequest;

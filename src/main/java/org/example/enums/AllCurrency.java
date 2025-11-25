@@ -1,4 +1,4 @@
-package org.example.store;
+package org.example.enums;
 
 
 import org.example.model.response.AllCurrencyDto;

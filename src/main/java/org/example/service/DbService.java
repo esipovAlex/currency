@@ -2,6 +2,7 @@ package org.example.service;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import org.example.dao.DbStore;
 import org.example.exception.CurrencyNotFoundException;
 import org.example.mapper.CurrencyMapper;
 import org.example.model.entity.Currency;
@@ -10,8 +11,7 @@ import org.example.model.request.ExchCreateRequest;
 import org.example.model.response.CurrencyDto;
 import org.example.model.response.ExRateRespDto;
 import org.example.model.response.ExchangeDto;
-import org.example.store.DbStore;
-import org.example.store.Store;
+import org.example.dao.Store;
 import org.mapstruct.factory.Mappers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

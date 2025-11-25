@@ -1,4 +1,4 @@
-package org.example.store;
+package org.example.enums;
 
 public enum Queries {
     SELECT_CURR("SELECT * FROM currencies"),
